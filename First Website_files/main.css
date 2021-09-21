@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    margin :auto;
+    align-items : center;
+
+}
+
+.nav-links
+{display:  flex;}
+
+.logo-container{
+    
+    flex:1;
+
+}
+.logo{
+    font-weight: 400;
+    margin:5px ;
+}
+nav {
+    flex: 1;
+    
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: #5f5f79 ;
+    font-size : 18px;
+    text-decoration: none ;
+}
+
+.presentation {
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .introduction{
+        
+        flex :1;
+    }
+    .intro-text h1{
+        font-size: 36px;
+        font-weight: 500px;
+        background: linear-gradient(to right, #494964,#6f6f89);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+    .intro-text p{
+        margin: top 5px;
+        font-size: 24px;
+        color:pink;
+
+    }
+    .cta{
+        padding: 50px 0px 0px 0px;
+
+    }
+
+    .cta-select{
+        border :2px solid pink;
+        background: transparent;
+        color: #5f5f79;
+        width: 150px;
+        height: 50px;
+        cursor :pointer;
+        border-radius: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        margin:30px 0px 0px 0px;
+        
+        
+    }
+    
+    .cover{
+        flex:1;
+    }
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px pink);
+    animation: drop 1.5s ease;
+}
+
+
+
+
+
+.ellipse {
+    position: absolute;
+    top:0px;
+    right:0px;
+
+}
+.ellipse24 {
+    position:absolute;
+    top:50%;
+    right: 20%;
+    z-index:-1 ;
+
+}
+.ellipse22 {
+    position:absolute;
+    top:40%;
+    right: 20%;
+    z-index:-1 ;
+    opacity: 0.5;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translate(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
